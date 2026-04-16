@@ -4,10 +4,10 @@
 **Matrícula:** 251072005  
 **Curso:** Engenharia de Software - Centro Universitário Filadélfia (UniFil)
 
-## 🚀 Sobre o Projeto
+## Sobre o Projeto
 Esta é uma API RESTful completa desenvolvida para gerenciar personagens e artefatos do jogo Genshin Impact. O projeto atende a todos os requisitos da disciplina, utilizando banco de dados relacional (SQLite) e garantindo a segurança das operações com Autenticação JWT.
 
-## 🛠️ Tecnologias e Requisitos Atendidos
+## Tecnologias e Requisitos Atendidos
 
 * **Node.js + Express:** Estrutura base da API.
 * **SQLite:** Banco de dados relacional, inicializado automaticamente com 20 registros reais.
@@ -16,13 +16,13 @@ Esta é uma API RESTful completa desenvolvida para gerenciar personagens e artef
 * **Autenticação (JWT):** Rota de `POST /personagens` protegida por token de acesso.
 * **Validações e Erros:** Status codes adequados (200, 201, 401, 500) e tratamento de exceções.
 
-## 📦 Como rodar o projeto localmente
+## Como rodar o projeto localmente
 
 1. Faça o clone deste repositório ou baixe os arquivos.
 2. Abra o terminal na pasta do projeto e digite `npm install` para baixar as dependências.
 3. Digite `node index.js` para ligar a API (o banco de dados será criado e populado automaticamente).
 
-## 🔑 Exemplo de Uso (Autenticação)
+## Exemplo de Uso (Autenticação)
 
 Para testar as rotas protegidas:
 1. Faça um POST em `/login` com usuário `pedro` e senha `123456`.
