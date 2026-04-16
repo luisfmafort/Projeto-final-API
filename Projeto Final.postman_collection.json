@@ -1,0 +1,123 @@
+{
+  "info": {
+    "_postman_id": "1a5cb8bd-4db2-4a19-8c08-bb037e1fc46d",
+    "name": "Projeto Final",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53436303",
+    "_collection_link": "https://go.postman.co/collection/53436303-1a5cb8bd-4db2-4a19-8c08-bb037e1fc46d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"user\": \"luis\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrar Personagem",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2MzgxMDc5LCJleHAiOjE3NzYzODQ2Nzl9.4GqsdfBLlArE7CtS6-XOm0Z5Oeu_mrQjMxHVWCMuRAA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nome\": \"Clorinde\", \"elemento\": \"Electro\", \"arma\": \"Espada\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/personagens",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "personagens"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Filtrar por Elemento",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/personagens?elemento=Geo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "personagens"
+          ],
+          "query": [
+            {
+              "key": "elemento",
+              "value": "Geo"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ver detalhes/JOIN",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/personagens/1/detalhes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "personagens",
+            "1",
+            "detalhes"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
