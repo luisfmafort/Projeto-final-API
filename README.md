@@ -27,3 +27,5 @@ Esta é uma API RESTful completa desenvolvida para gerenciar personagens e artef
 Para testar as rotas protegidas:
 1. Faça um POST em `/login` com usuário `pedro` e senha `123456`.
 2. Use o Token retornado no cabeçalho `Authorization: Bearer <TOKEN>` para cadastrar novos personagens.
+
+P.S: Gostaria de pedir desculpas por não conseguir implementar o Deploy nesse projeto. Fiquei tentando por muito tempo, porém havia algum erro específico envolvendo Linux que não consegui descobrir como resolvia. Nesse quesito, o trabalho não está 100% completo, mas eu diria que fiz um bom trabalho em realizar as outras tarefas atribuídas, como o JWT e os JOINs.
